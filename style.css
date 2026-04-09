@@ -3,8 +3,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
-    color: #333;
-    background-color: #f4f7f6;
+    color: #2e2e2e;
+    background-color: #ffffff;
 }
 
 .container {
@@ -17,56 +17,84 @@ body {
 nav {
     background: #ffffff;
     padding: 1rem 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid #4B2E83; /* Matching Logo Purple */
+}
+
+/* Fixed positioning for the logo container */
+nav .container {
+    display: flex;
+    justify-content: flex-start; /* Aligns logo to the left */
+    align-items: center;
+}
+
+/* Use the original, larger logo and scale it */
+.logo {
+    height: 60px; /* Slightly taller for visibility */
+    display: block;
 }
 
 /* Hero Section */
 .hero {
-    background: #2c3e50;
+    background: #4B2E83; /* Matching Logo Deep Purple */
     color: #ffffff;
-    padding: 100px 0;
+    padding: 120px 0;
     text-align: center;
+    border-bottom: 5px solid white;
 }
 
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 10px;
+    font-weight: 700;
 }
 
 .hero button {
-    background: #27ae60;
-    color: white;
+    background: white;
+    color: #4B2E83; /* Matching Logo Deep Purple */
     padding: 15px 30px;
-    border: none;
+    border: 2px solid #ffffff;
     cursor: pointer;
     font-size: 1.2rem;
     border-radius: 5px;
     margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.hero button:hover {
+    background: transparent;
+    color: white;
 }
 
 /* Features Section */
 #features {
-    padding: 50px 0;
+    padding: 70px 0;
     text-align: center;
 }
 
 .feature-grid {
     display: flex;
     justify-content: space-around;
-    margin-top: 30px;
+    gap: 20px;
+    margin-top: 40px;
 }
 
 .feature {
     flex-basis: 45%;
-    background: white;
-    padding: 20px;
+    background: #f9f9f9;
+    padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(75, 46, 131, 0.08); /* Faint Purple shadow */
+    border-top: 3px solid #4B2E83; /* Feature top border match */
+}
+
+.feature h3 {
+    color: #4B2E83;
 }
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 30px;
     background: #333;
     color: white;
+    font-size: 0.9rem;
 }
