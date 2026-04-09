@@ -37,7 +37,8 @@ nav .container {
 
 .logo {
     display: block;
-    height: 40px; 
+    /* Fixed height to prevent the logo from being too large */
+    height: 50px; 
     width: auto;
 }
 
