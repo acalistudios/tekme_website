@@ -27,10 +27,11 @@ nav .container {
     align-items: center;
 }
 
-/* Use the original, larger logo and scale it */
+/* Ensures the logo scales nicely within the nav */
 .logo {
-    height: 60px; /* Slightly taller for visibility */
     display: block;
+    max-width: 100%;
+    height: auto; /* This respects your HTML height but keeps it sharp */
 }
 
 /* Hero Section */
